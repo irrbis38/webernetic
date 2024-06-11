@@ -5,7 +5,23 @@ block head
     title Webernetic Test Project
 block page 
 
-
+    .container 
+        section.demo 
+            .demo__descr
+                h1.demo__title Демо-версия
+                p.demo__text За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить 
+                button.demo__btn(type="button") Попробовать бесплатно
+            .demo__preview
+                picture
+                    source(media="(min-width:1600px)" srcset= "./images/demo/demo.webp, ./images/demo/demo@2x.webp 2x" type="image/webp"  width="910" height="456")
+                    source(media="(min-width:1600px)" srcset= "./images/demo/demo.jpg, ./images/demo/demo@2x.jpg 2x" type="image/jpg"  width="910" height="456")
+                    source(media="(min-width:992px)" srcset= "./images/demo/demo-desk.webp, ./images/demo/demo-desk@2x.webp 2x" type="image/webp"  width="680" height="456")
+                    source(media="(min-width:992px)" srcset= "./images/demo/demo-desk.jpg, ./images/demo/demo-desk@2x.jpg 2x" type="image/jpg"  width="680" height="456")
+                    source(media="(min-width:576px)" srcset= "./images/demo/demo-tablet.webp, ./images/demo/demo-tablet@2x.webp 2x" type="image/webp"  width="720" height="360")
+                    source(media="(min-width:576px)" srcset= "./images/demo/demo-tablet.jpg, ./images/demo/demo-tablet@2x.jpg 2x" type="image/jpg"  width="720" height="360")
+                    source(media="(max-width:575px)" srcset= "./images/demo/demo-mob.webp, ./images/demo/demo-mob@2x.webp 2x" type="image/webp"  width="328" height="220")
+                    source(media="(max-width:575px)" srcset= "./images/demo/demo-mob.jpg, ./images/demo/demo-mob@2x.jpg 2x" type="image/jpg"  width="328" height="220")
+                    img(class="demo__img" src= "./images/demo/demo.jpg" srcset= "./images/demo/demo.jpg, ./images/demo/demo@2x.jpg 2x" alt="" width="910" height="456" decoding="async" loading="lazy")
 
 
 
